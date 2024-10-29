@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chef Glauco Mennu</title>
+
+    <link rel="stylesheet" href="quantity.css">
+</head>
+<body>
+    
+
+    <div class="boxgeral">
+
+        <h1>Menu - Faça a sua escolha</h1>
+        
+
+
+        <div class="principal">
+            
+            <div class="containertexto">
+                <h2>Prato Principal</h2>
+                Todos os prato acompanham arroz, feijão e acompanhamento(s) do dia.
+                <div class="itens">
+                    Bife com batata
+                    <div class="preco">
+                        R$ 30,00
+                    </div>
+                    <div class="quantity buttons_added">
+                        <input type="button" value="-" class="minus">
+                        <input type="number" step="1" min="0" id="1" name="quantity" value="0" title="Qty" class="input-text qty text" >
+                        <input type="button" value="+" class="plus">
+                    </div>
+                </div>
+                <div class="itens">
+                    Coxa de frango crocante
+                    <div class="preco">
+                        R$ 25,00
+                    </div>
+                    <div class="quantity buttons_added">
+                        <input type="button" value="-" class="minus">
+                        <input type="number" step="1" min="0" id="1" name="quantity" value="0" title="Qty" class="input-text qty text" >
+                        <input type="button" value="+" class="plus">
+                    </div>
+                </div>
+                <div class="itens">
+                    Carne de panela
+                    <div class="preco">
+                        R$ 22,00
+                    </div>
+                    <div class="quantity buttons_added">
+                        <input type="button" value="-" class="minus">
+                        <input type="number" step="1" min="0" id="1" name="quantity" value="0" title="Qty" class="input-text qty text" >
+                        <input type="button" value="+" class="plus">
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="acompanhamentos">
+            <div class="containertexto">
+                <h2>Acompanhamentos</h2>
+                Porção para uma pessoa.
+                <div class="itens">
+                    Farofa
+                    <div class="preco">
+                        R$ 30,00
+                    </div>
+                    <div class="quantity buttons_added">
+                        <input type="button" value="-" class="minus">
+                        <input type="number" step="1" min="0" id="1" name="quantity" value="0" title="Qty" class="input-text qty text" >
+                        <input type="button" value="+" class="plus">
+                    </div>
+                </div>
+                <div class="itens">
+                    Salada
+                    <div class="preco">
+                        R$ 30,00
+                    </div>
+                    <div class="quantity buttons_added">
+                        <input type="button" value="-" class="minus">
+                        <input type="number" step="1" min="0" id="1" name="quantity" value="0" title="Qty" class="input-text qty text" >
+                        <input type="button" value="+" class="plus">
+                    </div>
+                </div>
+                <div class="itens">
+                    Torresmo
+                    <div class="preco">
+                        R$ 30,00
+                    </div>
+                    <div class="quantity buttons_added">
+                        <input type="button" value="-" class="minus">
+                        <input type="number" step="1" min="0" id="1" name="quantity" value="0" title="Qty" class="input-text qty text" >
+                        <input type="button" value="+" class="plus">
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="dados">
+            <input type="text" id="nome" placeholder="Digite seu nome"/>
+            <input type="tel" id="phone" placeholder="Digite seu telefone" pattern="[0-9]{2} [0-9]{5} [0-9]{4}" required></input>
+            <input type="email" id="email" placeholder="Digite seu email"/>
+        </div>
+        <button id="calcular" class="btncalcular">Calcular</button>
+    </div>
+
+
+    
+
+
+
+
+    <script src="jquery-3.7.1.min.js"></script>
+    <script src="jquery.mask.min.js"></script>
+
+    <script>
+        $("#phone").mask("(99) 99999-9999");
+    </script>
+
+    <script src="quantity.js"></script>
+</body>
+</html>
